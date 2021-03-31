@@ -5,10 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sidebar app</title>
+    <!-- FONST -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONST -->
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- ICONS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Sidebar app</h1>
+    <header class="header">
+      <h1 class="title">Sidebar app</h1>
+      <button class="show-btn">
+        <i class="fas fa-bars show"></i>
+        <i class="far fa-times-circle close"></i>
+      </button>
+    </header>
+
+    <aside class="sidebar">
+      <ul class="sidebar__menu">
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">Home</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">About</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">Projects</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
     <script src="app.js"></script>
   </body>
 </html>
