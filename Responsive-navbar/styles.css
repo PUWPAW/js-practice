@@ -12,6 +12,9 @@ body {
 
 .header {
   position: relative;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .nav {
@@ -19,11 +22,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 10px;
-
-  background-color: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .nav__home {
@@ -108,9 +106,12 @@ body {
   }
 
   .menu {
-    display: none;
     width: 100%;
     flex-direction: column;
+
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
   }
 
   .menu__item:hover {
@@ -133,6 +134,6 @@ body {
   }
 
   .show-menu {
-    display: block;
+    height: 256px;
   }
 }
