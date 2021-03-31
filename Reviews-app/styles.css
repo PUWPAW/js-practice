@@ -54,9 +54,10 @@ body {
 
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 
   width: 700px;
+  min-height: 520px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
@@ -74,7 +75,6 @@ body {
   position: relative;
   display: block;
   padding: 15px;
-  animation: show 0.8s forwards;
 }
 
 .card__avatar {
@@ -153,6 +153,13 @@ body {
   text-align: center;
 }
 
+.btn-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .btn-nav {
   display: flex;
   justify-content: center;
@@ -181,7 +188,7 @@ body {
   transform: translateX(-1px);
 }
 
-.btn-surprise {
+.btn-random {
   display: block;
   margin: 0 auto;
   padding: 5px;
@@ -209,13 +216,15 @@ body {
   transform: translate(1px, 1px);
 }
 
+.animated {
+  animation: show 0.5s forwards;
+}
+
 @keyframes show {
   from {
     opacity: 0;
-    /* transform: translateX(-200px); */
   }
   to {
     opacity: 1;
-    transform: translateX(0);
   }
 }
