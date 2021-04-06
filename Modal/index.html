@@ -12,11 +12,35 @@
       rel="stylesheet"
     />
     <!-- FONTS -->
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- ICONS -->
 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Modal app</h1>
+    <header class="header">
+      <h1 class="title">Modal app</h1>
+    </header>
+
+    <main>
+      <button class="btn">Click me!</button>
+
+      <div class="modal">
+        <h2 class="modal__title">Modal</h2>
+        <p class="modal__description">Hello i am modal!</p>
+        <button class="modal__close">
+          <i class="far fa-times-circle close"></i>
+        </button>
+      </div>
+    </main>
+
+    <div class="modal-active"></div>
 
     <script src="app.js"></script>
   </body>
